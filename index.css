@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Supermercado+One&display=swap");
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Supermercado One', cursive; */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./img/spider1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ===== Scrollbar CSS ===== */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-button {
+  width: 31px;
+  height: 31px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 41px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 21px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+#wrapper {
+  /* background-color: yellowgreen; */
+  width: 500px;
+  margin: 10% auto;
+}
+@media screen and (max-width: 1400px) {
+  #wrapper {
+    margin: 0% auto;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.innerBox {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 10px 10px;
+  text-align: center;
+  padding: 0px 20px;
+  border-radius: 21px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.innerBox h1 {
+  margin-top: 55%;
+  background-color: transparent;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  /* display: none; */
+}
+.mystyle {
+  color: red;
+}
+#gameName {
+  color: white;
+  /* margin-top: 30px; */
+  text-align: center;
+  font-size: 100px;
+  /* background-color: rebeccapurple; */
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* display: none; */
+
+  font-family: "Poppins", sans-serif;
+}
+img {
+  /* height: 1000px; */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  transform: translateY(-80%);
+  transition: all 3s ease;
+}
+#infowrapper {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 20px;
+  color: white;
+  margin-top: 25px;
+}
+#infowrapper p {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+#infowrapper button {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#winner {
+  color: #ffffff;
+  background: #232323;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  color: #ffffff;
+  background: #232323;
+  font-size: 40px;
+}
+#turn {
+  color: #ffffff;
+  background: #232323;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #fe0000, 0 0 40px #fe0000, 0 0 55px #fe0000, 0 0 75px #fe0000;
+  color: #ffffff;
+  background: #232323;
+  font-size: 40px;
+}
